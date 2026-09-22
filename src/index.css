@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    background-color: #fafaf9;
+    scroll-behavior: smooth;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Editorial Serif and Display Typographies from Reference */
+.font-display-serif {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Custom architectural diagonal hatching texture matching reference image */
+.bg-hatch-pattern {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(34, 59, 230, 0.045),
+    rgba(34, 59, 230, 0.045) 1px,
+    transparent 1px,
+    transparent 7px
+  );
+}
+
+.bg-hatch-pattern-dense {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(34, 59, 230, 0.07),
+    rgba(34, 59, 230, 0.07) 1px,
+    transparent 1px,
+    transparent 5px
+  );
+}
+
+.bg-hatch-pattern-red {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(235, 45, 75, 0.06),
+    rgba(235, 45, 75, 0.06) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+}
+
+.bg-hatch-pattern-white {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.12) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+}
+
+/* Hairline Grid & Architectural Elements */
+.editorial-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(34, 59, 230, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(34, 59, 230, 0.03) 1px, transparent 1px);
+}
+
+/* Engineering blueprint grid matching front page reference */
+.bg-blueprint-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 102, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 102, 255, 0.06) 1px, transparent 1px);
+}
+
+
